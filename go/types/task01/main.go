@@ -3,13 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	var total int = 56
-	var count int = 13
+	var name string = "Хлеб"
+	var amount int = 17
+	var price float64 = 209.93
+	var hasSale bool = true
 
-	var intDiv int = total / count
-	var fracDiv float64 = float64(total / count)
-
-	fmt.Println("Целочисленное деление: ", intDiv)
-	fmt.Println("Дробное деление: ", fracDiv)
-
+	fmt.Println("            Информация о товаре:")
+	fmt.Println("Название:", name)
+	fmt.Printf("Количество: %d шт.\n", amount)
+	fmt.Printf("Цена: %.2f тг.\n", price)
+	fmt.Println("Имеется скидка: ", hasSale)
 }
